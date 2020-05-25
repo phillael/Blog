@@ -24,7 +24,7 @@ const postSchema = {
 
 const Post = mongoose.model("Post", postSchema);
 
-const homeStartingContent = "This is a blog website made using EJS templating.  Click the compose button to add your own post to this blog! The data is stored on MongoDB and the server is running on node.js and express. The homepage is rendered EJS with to show all of the posts, and a new page is rendered for each individual post by using express routing parameters 😱";
+const homeStartingContent = "This is a blog website made using EJS templating.  Click the compose button to add your own post to this blog! The data is stored on MongoDB and the server is running on node.js and express. The homepage is rendered eith EJS to show all of the posts, and a new page is rendered for each individual post by using express routing parameters 😱";
 const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rhoncus urna neque viverra justo nec ultrices. Arcu dui vivamus arcu felis bibendum. Consectetur adipiscing elit duis tristique. Risus viverra adipiscing at in tellus integer feugiat. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Consequat interdum varius sit amet mattis. Iaculis nunc sed augue lacus. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Pulvinar elementum integer enim neque. Ultrices gravida dictum fusce ut placerat orci nulla. Mauris in aliquam sem fringilla ut morbi tincidunt. Tortor posuere ac ut consequat semper viverra nam libero.";
 
 
