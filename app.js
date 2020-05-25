@@ -9,10 +9,12 @@ const mongoose = require("mongoose");
 const date = require(__dirname + "/date.js");
 const day = date.getDate();
 
-mongoose.connect('mongodb://localhost:27017/blogDB', {
+mongoose.connect("mongodb+srv://Phillael:ITyMJVBDE7Cf8vSW@cluster0-l4vod.mongodb.net/blogDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
+
+
 
 const postSchema = {
   title: String,
@@ -94,7 +96,11 @@ app.get("/posts/:postId", function(req, res) {
 
 
 
+let port = process.env.PORT;
+if (port == null || port == ""){
+  port = 5000;
+}
 
-app.listen(5000, function() {
-  console.log("Server started on port 5000");
+app.listen(port, function() {
+  console.log("Server has started successfully");
 });
